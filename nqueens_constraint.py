@@ -2,7 +2,7 @@ from constraint import *
 
 problem = Problem()
 
-board_size = 10
+board_size = 8
 
 queen_list = range(board_size)
 # enforce different columns by restricting each queen to only move within 1 column.
@@ -25,8 +25,7 @@ solutions = problem.getSolutions()
 def print_horiz_line():
     print(" ---" * board_size)
 
-for i,s in enumerate(solutions):
-    print(f"\n\nSolution {i+1}")
+def print_solution(s):
     for y in range(board_size):
         print_horiz_line()
         for x in range(board_size):
@@ -38,3 +37,7 @@ for i,s in enumerate(solutions):
             print(cell, end='')
         print("|   ")
     print_horiz_line()
+
+for i,s in enumerate(solutions):
+    print(f"\n\nSolution {i+1}")
+    print_solution(s)
