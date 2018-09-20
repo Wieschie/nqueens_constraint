@@ -2,7 +2,7 @@
 1. Clone the repo and cd into it.
 
 2. Create and activate a new virtual environment:
-    * `python3 -m virtualenv nqueens`
+    * `python3 -m venv nqueens`
     * _linux_: `source nqueens/bin/activate`
     * _windows_: `\nqueens\bin\activate`
 
